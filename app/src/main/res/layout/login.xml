@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+    <FrameLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="300dp"
+        android:background="@drawable/loginedit"
+        android:layout_height="50dp"
+        android:elevation="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/frameLayout2">
+        <EditText
+            android:id="@+id/ed1"
+            android:hint="Enter your Email"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginTop="190dp"
+        android:layout_width="300dp"
+        android:background="@drawable/loginedit"
+        android:layout_height="50dp"
+        android:elevation="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/frameLayout">
+
+        <EditText
+            android:id="@+id/ed2"
+            android:textColor="#000"
+            android:hint="Enter password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="100dp"
+        android:elevation="40dp"
+        android:background="@drawable/button"
+        android:layout_height="50dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp">
+        <TextView
+            android:id="@+id/tx"
+            android:textSize="20dp"
+            android:text="Login"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+       android:layout_marginTop="100dp"
+        android:layout_below="@id/frame"
+       android:layout_marginBottom="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/ruler">
+
+    </FrameLayout>
+
+<FrameLayout
+    android:id="@+id/frametwo"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/button"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <TextView
+        android:textColor="#fff"
+        android:text="Registeration"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>
+
+
+</RelativeLayout>

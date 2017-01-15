@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src ="@drawable/musicbackground"
+        android:layout_above="@+id/seekbarone"
+        android:layout_alignParentTop="true" />
+
+    <SeekBar
+        android:id="@+id/seekbarone"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#384"
+        android:layout_above="@+id/framemusic"/>
+    <FrameLayout
+        android:id="@+id/framemusic"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shayr"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/playone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pauseplay"
+            android:layout_gravity="center"/>
+        <ImageButton
+            android:id="@+id/fone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_song"
+            android:layout_gravity="right"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="5dp"/>
+        <ImageButton
+            android:id="@+id/rone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/previous_song"
+            android:layout_gravity="left"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"/>
+    </FrameLayout>
+
+</RelativeLayout>
